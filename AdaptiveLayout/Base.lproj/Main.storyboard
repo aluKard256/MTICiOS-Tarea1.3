@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DFN-1Q-tdi" userLabel="DescriptionView">
+                                <rect key="frame" x="0.0" y="-119" width="1499" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2010 Motobecane Grand Sprint" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Pn-Ko-5eD">
+                                        <rect key="frame" x="20" y="40" width="1459" height="59"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SC0-Jg-rQK">
+                                        <rect key="frame" x="20" y="119" width="1459" height="30"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SC0-Jg-rQK" secondAttribute="trailing" constant="20" id="6ZY-xy-Sud"/>
+                                    <constraint firstItem="SC0-Jg-rQK" firstAttribute="leading" secondItem="DFN-1Q-tdi" secondAttribute="leading" constant="20" id="PjE-4d-IPg"/>
+                                    <constraint firstItem="2Pn-Ko-5eD" firstAttribute="leading" secondItem="DFN-1Q-tdi" secondAttribute="leading" constant="20" id="Znt-rK-1D8"/>
+                                    <constraint firstItem="2Pn-Ko-5eD" firstAttribute="top" secondItem="DFN-1Q-tdi" secondAttribute="top" constant="40" id="asR-8W-xXz"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Pn-Ko-5eD" secondAttribute="trailing" constant="20" id="e8B-U9-D0Z"/>
+                                    <constraint firstItem="SC0-Jg-rQK" firstAttribute="top" secondItem="2Pn-Ko-5eD" secondAttribute="bottom" constant="20" id="waM-g1-2Gc"/>
+                                </constraints>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="1200" y="-40" width="1499" height="0.0"/>
+                                </variation>
+                                <variation key="heightClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1499" height="320"/>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-40" width="1499" height="240"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="1600" y="-40" width="1499" height="0.0"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1499" height="320"/>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="motobecane" translatesAutoresizingMaskIntoConstraints="NO" id="jzl-uV-LOf">
+                                <rect key="frame" x="0.0" y="120" width="300" height="178"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="21" y="62" width="1200" height="178"/>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="200" width="300" height="178"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="21" y="62" width="1600" height="178"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DFN-1Q-tdi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0va-l2-5ZL"/>
+                            <constraint firstItem="jzl-uV-LOf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2" id="BhA-jx-MPo"/>
+                            <constraint firstItem="jzl-uV-LOf" firstAttribute="top" secondItem="DFN-1Q-tdi" secondAttribute="bottom" id="eWV-FT-PWP"/>
+                            <constraint firstItem="jzl-uV-LOf" firstAttribute="top" secondItem="DFN-1Q-tdi" secondAttribute="bottom" id="hs2-30-WQc"/>
+                            <constraint firstItem="DFN-1Q-tdi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="imA-vr-25r"/>
+                            <constraint firstItem="jzl-uV-LOf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jab-Mu-GzO"/>
+                            <constraint firstItem="DFN-1Q-tdi" firstAttribute="leading" secondItem="jzl-uV-LOf" secondAttribute="trailing" id="k1t-pT-off"/>
+                            <constraint firstItem="jzl-uV-LOf" firstAttribute="top" secondItem="DFN-1Q-tdi" secondAttribute="bottom" id="o3M-20-9pu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="k1t-pT-off"/>
+                                <exclude reference="BhA-jx-MPo"/>
+                                <exclude reference="hs2-30-WQc"/>
+                                <exclude reference="o3M-20-9pu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="0va-l2-5ZL"/>
+                                <exclude reference="imA-vr-25r"/>
+                                <include reference="k1t-pT-off"/>
+                                <include reference="BhA-jx-MPo"/>
+                                <exclude reference="eWV-FT-PWP"/>
+                                <include reference="hs2-30-WQc"/>
+                                <include reference="o3M-20-9pu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="motobecane" width="300" height="178"/>
+    </resources>
+</document>
